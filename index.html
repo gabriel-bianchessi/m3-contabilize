@@ -16,6 +16,7 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
+
     .line-clamp-3 {
       display: -webkit-box;
       -webkit-line-clamp: 3;
@@ -23,13 +24,13 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
-    
+
     @media (max-width: 640px) {
       .hero-content {
         padding: 1rem;
       }
     }
-    
+
     /* Mobile menu fix */
     .dropdown:focus-within .dropdown-content {
       display: block;
@@ -45,12 +46,16 @@
         <img src="./assets/images/logo_horizontal.png" class="object-contain h-12 md:h-16" />
 
         <nav class="hidden md:flex space-x-4 lg:space-x-6">
-                  <a href="./index.html" class="text-sm lg:text-base text-primary font-semibold">Início</a>
+          <a href="./index.html" class="text-sm lg:text-base text-primary font-semibold">Início</a>
 
-          <a href="./sobre-nos.html" class="text-sm lg:text-base text-base-content hover:text-primary transition-colors">Sobre Nós</a>
-          <a href="./servicos.html" class="text-sm lg:text-base text-base-content hover:text-primary transition-colors">Serviços</a>
-          <a href="./clientes.html" class="text-sm lg:text-base text-base-content hover:text-primary transition-colors">Clientes</a>
-          <a href="./contato.html" class="text-sm lg:text-base text-base-content hover:text-primary transition-colors">Contato</a>
+          <a href="./sobre-nos.html"
+            class="text-sm lg:text-base text-base-content hover:text-primary transition-colors">Sobre Nós</a>
+          <a href="./servicos.html"
+            class="text-sm lg:text-base text-base-content hover:text-primary transition-colors">Serviços</a>
+          <a href="./clientes.html"
+            class="text-sm lg:text-base text-base-content hover:text-primary transition-colors">Clientes</a>
+          <a href="./contato.html"
+            class="text-sm lg:text-base text-base-content hover:text-primary transition-colors">Contato</a>
         </nav>
 
         <!-- Menu Mobile -->
@@ -73,9 +78,14 @@
     <main class="relative z-10 flex items-center justify-center min-h-[calc(100vh-96px)] hero px-4">
       <div class="hero-content text-center max-w-4xl">
         <div>
-          <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-primary font-bold drop-shadow-xl mb-4">CONTABILIZE</h1>
-          <p class="text-base sm:text-lg md:text-xl mb-4 md:mb-6 px-2">Sua parceira de confiança em contabilidade e gestão empresarial</p>
-          <p class="text-sm sm:text-base md:text-lg opacity-80 mb-6 md:mb-8 px-2 max-w-2xl mx-auto">Oferecemos soluções completas em contabilidade, consultoria fiscal e planejamento tributário para empresas de todos os portes</p>
+          <h1
+            class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-primary font-bold drop-shadow-xl mb-4">
+            CONTABILIZE</h1>
+          <p class="text-base sm:text-lg md:text-xl mb-4 md:mb-6 px-2">Sua parceira de confiança em contabilidade e
+            gestão empresarial</p>
+          <p class="text-sm sm:text-base md:text-lg opacity-80 mb-6 md:mb-8 px-2 max-w-2xl mx-auto">Oferecemos soluções
+            completas em contabilidade, consultoria fiscal e planejamento tributário para empresas de todos os portes
+          </p>
           <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-4">
             <button class="btn btn-primary btn-sm sm:btn-md lg:btn-lg w-full sm:w-auto">Solicitar Orçamento</button>
             <button class="btn btn-outline btn-sm sm:btn-md lg:btn-lg w-full sm:w-auto">Conhecer Serviços</button>
@@ -86,7 +96,8 @@
   </div>
   <section class="py-8 md:py-12 lg:py-16 px-4">
     <div class="max-w-7xl mx-auto">
-      <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12 px-4">Nossos Resultados em Números</h2>
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12 px-4">Nossos Resultados em Números
+      </h2>
       <div class="stats stats-vertical sm:stats-horizontal shadow w-full">
         <div class="stat place-items-center text-center">
           <div class="stat-title text-xs sm:text-sm">Clientes Atendidos</div>
@@ -114,51 +125,65 @@
       </div>
     </div>
   </section>
-  
+
   <section class="py-8 md:py-12 lg:py-16 px-4 bg-base-100">
     <div class="max-w-7xl mx-auto">
-      <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12 px-4">Últimas Notícias & Atualizações</h2>
-      
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12 px-4">Últimas Notícias &
+        Atualizações</h2>
+
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4 auto-rows-auto">
-        <div class="sm:col-span-2 md:col-span-4 lg:col-span-3 lg:row-span-2 bg-primary/20 border border-primary/30 rounded-lg p-4 md:p-6 hover:shadow-lg hover:bg-primary/25 transition-all duration-300">
+        <div
+          class="sm:col-span-2 md:col-span-4 lg:col-span-3 lg:row-span-2 bg-primary/20 border border-primary/30 rounded-lg p-4 md:p-6 hover:shadow-lg hover:bg-primary/25 transition-all duration-300">
           <div class="badge badge-primary mb-2 md:mb-3 text-xs">Destaque</div>
-          <h3 class="text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-4">Nova Lei do Marco Legal das Startups: Impactos na Contabilidade</h3>
-          <p class="text-sm md:text-base text-base-content/80 mb-3 md:mb-4 line-clamp-3">As mudanças na legislação trazem novas oportunidades para empresas de tecnologia. Entenda como adequar sua contabilidade às novas regras.</p>
+          <h3 class="text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-4">Nova Lei do Marco Legal das Startups:
+            Impactos na Contabilidade</h3>
+          <p class="text-sm md:text-base text-base-content/80 mb-3 md:mb-4 line-clamp-3">As mudanças na legislação
+            trazem novas oportunidades para empresas de tecnologia. Entenda como adequar sua contabilidade às novas
+            regras.</p>
           <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
             <span class="text-xs md:text-sm opacity-60">15 de Junho, 2025</span>
             <button class="btn btn-primary btn-xs sm:btn-sm">Ler mais</button>
           </div>
         </div>
 
-        <div class="sm:col-span-2 md:col-span-2 lg:col-span-2 bg-secondary/10 rounded-lg p-3 md:p-4 hover:shadow-lg transition-all duration-300">
+        <div
+          class="sm:col-span-2 md:col-span-2 lg:col-span-2 bg-secondary/10 rounded-lg p-3 md:p-4 hover:shadow-lg transition-all duration-300">
           <div class="badge badge-secondary mb-2 text-xs">Tributário</div>
-          <h4 class="text-base md:text-lg font-semibold mb-2 md:mb-3">Simples Nacional 2025: Novas Faixas de Faturamento</h4>
-          <p class="text-xs md:text-sm text-base-content/70 mb-2 md:mb-3 line-clamp-2">Governo anuncia ajustes nos limites do Simples Nacional para o próximo ano.</p>
+          <h4 class="text-base md:text-lg font-semibold mb-2 md:mb-3">Simples Nacional 2025: Novas Faixas de Faturamento
+          </h4>
+          <p class="text-xs md:text-sm text-base-content/70 mb-2 md:mb-3 line-clamp-2">Governo anuncia ajustes nos
+            limites do Simples Nacional para o próximo ano.</p>
           <span class="text-xs opacity-60">12 de Junho, 2025</span>
         </div>
 
-        <div class="sm:col-span-1 md:col-span-2 lg:col-span-1 bg-accent/10 rounded-lg p-3 md:p-4 hover:shadow-lg transition-all duration-300">
+        <div
+          class="sm:col-span-1 md:col-span-2 lg:col-span-1 bg-accent/10 rounded-lg p-3 md:p-4 hover:shadow-lg transition-all duration-300">
           <div class="badge badge-accent mb-2 text-xs">Dica</div>
           <h4 class="text-sm md:text-base font-semibold mb-2">PIX na Contabilidade</h4>
           <p class="text-xs text-base-content/70 mb-2 line-clamp-2">Como registrar corretamente as transações PIX.</p>
           <span class="text-xs opacity-60">10 de Junho</span>
         </div>
 
-        <div class="sm:col-span-2 md:col-span-2 lg:col-span-2 bg-info/10 rounded-lg p-3 md:p-4 hover:shadow-lg transition-all duration-300">
+        <div
+          class="sm:col-span-2 md:col-span-2 lg:col-span-2 bg-info/10 rounded-lg p-3 md:p-4 hover:shadow-lg transition-all duration-300">
           <div class="badge badge-info mb-2 text-xs">Tecnologia</div>
           <h4 class="text-base md:text-lg font-semibold mb-2 md:mb-3">eSocial: Novas Funcionalidades em 2025</h4>
-          <p class="text-xs md:text-sm text-base-content/70 mb-2 md:mb-3 line-clamp-2">Plataforma ganha recursos de IA para facilitar a gestão de folha de pagamento.</p>
+          <p class="text-xs md:text-sm text-base-content/70 mb-2 md:mb-3 line-clamp-2">Plataforma ganha recursos de IA
+            para facilitar a gestão de folha de pagamento.</p>
           <span class="text-xs opacity-60">8 de Junho, 2025</span>
         </div>
 
-        <div class="sm:col-span-1 md:col-span-2 lg:col-span-1 bg-warning/10 rounded-lg p-3 md:p-4 hover:shadow-lg transition-all duration-300">
+        <div
+          class="sm:col-span-1 md:col-span-2 lg:col-span-1 bg-warning/10 rounded-lg p-3 md:p-4 hover:shadow-lg transition-all duration-300">
           <div class="badge badge-warning mb-2 text-xs">Alerta</div>
           <h4 class="text-sm md:text-base font-semibold mb-2">Prazo IRPF</h4>
-          <p class="text-xs text-base-content/70 mb-2 line-clamp-2">Últimos dias para declaração do Imposto de Renda.</p>
+          <p class="text-xs text-base-content/70 mb-2 line-clamp-2">Últimos dias para declaração do Imposto de Renda.
+          </p>
           <span class="text-xs opacity-60">5 de Junho</span>
         </div>
 
-        <div class="sm:col-span-2 md:col-span-2 lg:col-span-2 bg-success/15 border border-success/30 rounded-lg p-3 md:p-4 hover:shadow-lg hover:bg-success/20 transition-all duration-300">
+        <div
+          class="sm:col-span-2 md:col-span-2 lg:col-span-2 bg-success/15 border border-success/30 rounded-lg p-3 md:p-4 hover:shadow-lg hover:bg-success/20 transition-all duration-300">
           <div class="stat p-0">
             <div class="stat-title text-xs md:text-sm">Economia Média dos Clientes</div>
             <div class="stat-value text-xl md:text-2xl text-success">R$ 45.2K</div>
@@ -166,10 +191,13 @@
           </div>
         </div>
 
-        <div class="sm:col-span-2 md:col-span-4 lg:col-span-3 bg-neutral/5 rounded-lg p-3 md:p-4 hover:shadow-lg transition-all duration-300">
+        <div
+          class="sm:col-span-2 md:col-span-4 lg:col-span-3 bg-neutral/5 rounded-lg p-3 md:p-4 hover:shadow-lg transition-all duration-300">
           <div class="badge badge-neutral mb-2 text-xs">Evento</div>
-          <h4 class="text-base md:text-lg font-semibold mb-2 md:mb-3">Webinar: "Contabilidade Digital e IA - O Futuro é Agora"</h4>
-          <p class="text-xs md:text-sm text-base-content/70 mb-2 md:mb-3 line-clamp-2">Participe do nosso webinar gratuito sobre as tendências tecnológicas na contabilidade. Dia 25/06 às 19h.</p>
+          <h4 class="text-base md:text-lg font-semibold mb-2 md:mb-3">Webinar: "Contabilidade Digital e IA - O Futuro é
+            Agora"</h4>
+          <p class="text-xs md:text-sm text-base-content/70 mb-2 md:mb-3 line-clamp-2">Participe do nosso webinar
+            gratuito sobre as tendências tecnológicas na contabilidade. Dia 25/06 às 19h.</p>
           <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
             <span class="text-xs opacity-60">Inscrições abertas</span>
             <button class="btn btn-neutral btn-xs sm:btn-sm">Inscrever-se</button>
@@ -178,11 +206,12 @@
       </div>
     </div>
   </section>
-  
+
   <section class="py-8 md:py-12 lg:py-16 px-4 bg-base-200">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-2xl md:text-3xl font-bold mb-4 md:mb-8 px-4">Pronto para otimizar sua contabilidade?</h2>
-      <p class="text-base md:text-lg mb-6 md:mb-8 px-4">Entre em contato conosco e descubra como podemos ajudar sua empresa a crescer</p>
+      <p class="text-base md:text-lg mb-6 md:mb-8 px-4">Entre em contato conosco e descubra como podemos ajudar sua
+        empresa a crescer</p>
       <button class="btn btn-primary btn-sm sm:btn-md lg:btn-lg mx-4">Falar com Especialista</button>
     </div>
   </section>

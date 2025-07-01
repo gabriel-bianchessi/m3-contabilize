@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="emerald">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+  <title>Sobre Nós - Contabilize</title>
+  <style>
+    /* Utility classes for better responsiveness */
+    .line-clamp-3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    
+    /* Mobile menu fix */
+    .dropdown:focus-within .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="relative z-10 flex items-center justify-center p-4 lg:p-6 bg-base-100 shadow-sm">
+    <div class="flex flex-1 items-center justify-between max-w-7xl">
+      <a href="index.html">
+        <img src="./assets/images/logo_horizontal.png" class="object-contain h-12 md:h-16" />
+      </a>
+
+      <!-- Menu Desktop -->
+      <nav class="hidden md:flex space-x-4 lg:space-x-6">
+        <a href="index.html" class="text-sm lg:text-base text-base-content hover:text-primary transition-colors">Início</a>
+        <a href="sobre-nos.html" class="text-sm lg:text-base text-primary font-semibold">Sobre Nós</a>
+        <a href="servicos.html" class="text-sm lg:text-base text-base-content hover:text-primary transition-colors">Serviços</a>
+        <a href="clientes.html" class="text-sm lg:text-base text-base-content hover:text-primary transition-colors">Clientes</a>
+        <a href="contato.html" class="text-sm lg:text-base text-base-content hover:text-primary transition-colors">Contato</a>
+      </nav>
+
+      <!-- Menu Mobile -->
+      <div class="dropdown dropdown-end md:hidden">
+        <label tabindex="0" class="btn btn-ghost btn-circle">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre-nos.html" class="text-primary font-semibold">Sobre Nós</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="clientes.html">Clientes</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-12 md:py-16 lg:py-20 px-4 bg-gradient-to-br from-primary/10 to-base-100">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-4 md:mb-6">Sobre a Contabilize</h1>
+      <p class="text-base sm:text-lg md:text-xl text-base-content/80 mb-6 md:mb-8 max-w-2xl mx-auto">
+        Há mais de 15 anos transformando a gestão financeira de empresas com excelência, inovação e compromisso
+      </p>
+      <div class="breadcrumbs text-sm">
+        <ul class="justify-center">
+          <li><a href="index.html" class="text-primary">Início</a></li>
+          <li>Sobre Nós</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nossa História -->
+  <section class="py-12 md:py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div>
+          <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">Nossa História</h2>
+          <div class="space-y-4 text-base-content/80">
+            <p class="text-base md:text-lg">
+              A <strong class="text-primary">Contabilize</strong> nasceu em 2010 com o objetivo de revolucionar o mercado contábil brasileiro, oferecendo soluções modernas e personalizadas para empresas de todos os portes.
+            </p>
+            <p class="text-base md:text-lg">
+              Fundada por uma equipe de profissionais experientes e visionários, nossa empresa sempre esteve na vanguarda da tecnologia contábil, sendo uma das primeiras a adotar sistemas digitais e automação de processos.
+            </p>
+            <p class="text-base md:text-lg">
+              Hoje, com mais de <strong class="text-primary">850 clientes ativos</strong> e uma equipe de <strong class="text-primary">25 especialistas</strong>, continuamos nossa missão de simplificar a gestão financeira e contribuir para o crescimento sustentável dos nossos parceiros.
+            </p>
+          </div>
+        </div>
+        <div class="order-first lg:order-last">
+          <div class="bg-primary/10 rounded-lg p-8 text-center">
+            <div class="stats stats-vertical shadow">
+              <div class="stat">
+                <div class="stat-title">Fundação</div>
+                <div class="stat-value text-primary">2010</div>
+                <div class="stat-desc">15 anos de experiência</div>
+              </div>
+              <div class="stat">
+                <div class="stat-title">Clientes Ativos</div>
+                <div class="stat-value text-secondary">850+</div>
+                <div class="stat-desc">Empresas parceiras</div>
+              </div>
+              <div class="stat">
+                <div class="stat-title">Especialistas</div>
+                <div class="stat-value text-accent">25</div>
+                <div class="stat-desc">Profissionais qualificados</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Missão, Visão e Valores -->
+  <section class="py-12 md:py-16 px-4 bg-base-200">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12">Nossos Pilares</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <!-- Missão -->
+        <div class="card bg-base-100 shadow-lg">
+          <div class="card-body text-center">
+            <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="card-title justify-center text-xl mb-4">Missão</h3>
+            <p class="text-base-content/80">
+              Fornecer soluções contábeis inovadoras e personalizadas, contribuindo para o crescimento sustentável e o sucesso financeiro de nossos clientes.
+            </p>
+          </div>
+        </div>
+
+        <!-- Visão -->
+        <div class="card bg-base-100 shadow-lg">
+          <div class="card-body text-center">
+            <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+              </svg>
+            </div>
+            <h3 class="card-title justify-center text-xl mb-4">Visão</h3>
+            <p class="text-base-content/80">
+              Ser reconhecida como a principal referência em excelência contábil no Brasil, transformando a gestão financeira através da tecnologia e inovação.
+            </p>
+          </div>
+        </div>
+
+        <!-- Valores -->
+        <div class="card bg-base-100 shadow-lg">
+          <div class="card-body text-center">
+            <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+            </div>
+            <h3 class="card-title justify-center text-xl mb-4">Valores</h3>
+            <ul class="text-left text-base-content/80 space-y-1">
+              <li>• Transparência e ética</li>
+              <li>• Excelência no atendimento</li>
+              <li>• Inovação constante</li>
+              <li>• Compromisso com resultados</li>
+              <li>• Responsabilidade social</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nossa Equipe -->
+  <section class="py-12 md:py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12">Nossa Equipe</h2>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <!-- Sócio-Diretor -->
+        <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300">
+          <div class="card-body text-center">
+            <div class="avatar placeholder mb-4">
+              <div class="bg-primary text-primary-content rounded-full w-20">
+                <span class="text-xl font-bold">MS</span>
+              </div>
+            </div>
+            <h3 class="card-title justify-center text-lg">Marcos Silva</h3>
+            <p class="text-primary font-semibold mb-2">Sócio-Diretor</p>
+            <p class="text-sm text-base-content/70 mb-3">
+              Contador com 20 anos de experiência, especialista em planejamento tributário e gestão empresarial.
+            </p>
+            <div class="text-xs text-base-content/60">
+              CRC: 12345/SP • MBA em Gestão Empresarial
+            </div>
+          </div>
+        </div>
+
+        <!-- Gerente Contábil -->
+        <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300">
+          <div class="card-body text-center">
+            <div class="avatar placeholder mb-4">
+              <div class="bg-secondary text-secondary-content rounded-full w-20">
+                <span class="text-xl font-bold">AS</span>
+              </div>
+            </div>
+            <h3 class="card-title justify-center text-lg">Ana Santos</h3>
+            <p class="text-secondary font-semibold mb-2">Gerente Contábil</p>
+            <p class="text-sm text-base-content/70 mb-3">
+              Especialista em contabilidade digital e compliance, com foco em automação de processos contábeis.
+            </p>
+            <div class="text-xs text-base-content/60">
+              CRC: 67890/SP • Pós-graduação em Auditoria
+            </div>
+          </div>
+        </div>
+
+        <!-- Gerente Fiscal -->
+        <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300">
+          <div class="card-body text-center">
+            <div class="avatar placeholder mb-4">
+              <div class="bg-accent text-accent-content rounded-full w-20">
+                <span class="text-xl font-bold">RL</span>
+              </div>
+            </div>
+            <h3 class="card-title justify-center text-lg">Ricardo Lima</h3>
+            <p class="text-accent font-semibold mb-2">Gerente Fiscal</p>
+            <p class="text-sm text-base-content/70 mb-3">
+              Expert em legislação tributária e obrigações acessórias, com ampla experiência em diversos regimes tributários.
+            </p>
+            <div class="text-xs text-base-content/60">
+              CRC: 13579/SP • Especialização em Direito Tributário
+            </div>
+          </div>
+        </div>
+
+        <!-- Gerente de Pessoas -->
+        <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300">
+          <div class="card-body text-center">
+            <div class="avatar placeholder mb-4">
+              <div class="bg-info text-info-content rounded-full w-20">
+                <span class="text-xl font-bold">CF</span>
+              </div>
+            </div>
+            <h3 class="card-title justify-center text-lg">Carla Ferreira</h3>
+            <p class="text-info font-semibold mb-2">Gerente de Pessoal</p>
+            <p class="text-sm text-base-content/70 mb-3">
+              Especialista em folha de pagamento e legislação trabalhista, responsável por toda gestão de RH dos clientes.
+            </p>
+            <div class="text-xs text-base-content/60">
+              Técnica em RH • Especialização em eSocial
+            </div>
+          </div>
+        </div>
+
+        <!-- Consultor Empresarial -->
+        <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300">
+          <div class="card-body text-center">
+            <div class="avatar placeholder mb-4">
+              <div class="bg-success text-success-content rounded-full w-20">
+                <span class="text-xl font-bold">JM</span>
+              </div>
+            </div>
+            <h3 class="card-title justify-center text-lg">João Martins</h3>
+            <p class="text-success font-semibold mb-2">Consultor Empresarial</p>
+            <p class="text-sm text-base-content/70 mb-3">
+              Consultor em gestão financeira e estratégica, auxiliando empresas na tomada de decisões e crescimento.
+            </p>
+            <div class="text-xs text-base-content/60">
+              MBA em Finanças • Analista de Investimentos
+            </div>
+          </div>
+        </div>
+
+        <!-- Coordenadora de Atendimento -->
+        <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300">
+          <div class="card-body text-center">
+            <div class="avatar placeholder mb-4">
+              <div class="bg-warning text-warning-content rounded-full w-20">
+                <span class="text-xl font-bold">LO</span>
+              </div>
+            </div>
+            <h3 class="card-title justify-center text-lg">Lucia Oliveira</h3>
+            <p class="text-warning font-semibold mb-2">Coordenadora de Atendimento</p>
+            <p class="text-sm text-base-content/70 mb-3">
+              Responsável pelo relacionamento com clientes e coordenação das demandas, garantindo excelência no atendimento.
+            </p>
+            <div class="text-xs text-base-content/60">
+              Administração • Gestão de Relacionamento
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diferenciais -->
+  <section class="py-12 md:py-16 px-4 bg-base-200">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12">Por que nos escolher?</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Experiência Comprovada</h3>
+          <p class="text-sm text-base-content/70">15 anos de mercado com mais de 850 empresas atendidas</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-secondary/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Tecnologia Avançada</h3>
+          <p class="text-sm text-base-content/70">Sistemas modernos e automação de processos</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-accent/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Equipe Especializada</h3>
+          <p class="text-sm text-base-content/70">Profissionais qualificados e em constante atualização</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-success/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Atendimento Premium</h3>
+          <p class="text-sm text-base-content/70">Suporte personalizado e relacionamento próximo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-12 md:py-16 px-4 bg-primary text-primary-content">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Quer conhecer mais sobre nossa empresa?</h2>
+      <p class="text-base md:text-lg mb-6 opacity-90">
+        Agende uma reunião conosco e descubra como podemos ser o parceiro ideal para sua empresa
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button class="btn btn-neutral btn-lg">Agendar Reunião</button>
+        <button class="btn btn-outline btn-lg border-white text-white hover:bg-white hover:text-primary">Fale Conosco</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer footer-center p-10 bg-base-200 text-base-content">
+    <aside>
+      <img src="./assets/images/logo_vertical.png" class="w-24 h-auto mb-4" alt="Contabilize Logo">
+      <p class="font-bold">Contabilize - Soluções Contábeis</p>
+      <p>Transformando números em oportunidades desde 2010</p>
+    </aside>
+    <nav>
+      <div class="grid grid-flow-col gap-4">
+        <a href="index.html" class="link link-hover">Início</a>
+        <a href="sobre-nos.html" class="link link-hover">Sobre</a>
+        <a href="servicos.html" class="link link-hover">Serviços</a>
+        <a href="clientes.html" class="link link-hover">Clientes</a>
+        <a href="contato.html" class="link link-hover">Contato</a>
+      </div>
+    </nav>
+  </footer>
+</body>
+
+</html>

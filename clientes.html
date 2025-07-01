@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="emerald">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+  <title>Clientes - Contabilize</title>
+  <style>
+    /* Utility classes for better responsiveness */
+    .line-clamp-3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    
+    /* Mobile menu fix */
+    .dropdown:focus-within .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="relative z-10 flex items-center justify-center p-4 lg:p-6 bg-base-100 shadow-sm">
+    <div class="flex flex-1 items-center justify-between max-w-7xl">
+      <a href="index.html">
+        <img src="./assets/images/logo_horizontal.png" class="object-contain h-12 md:h-16" />
+      </a>
+
+      <!-- Menu Desktop -->
+      <nav class="hidden md:flex space-x-4 lg:space-x-6">
+        <a href="index.html" class="text-sm lg:text-base text-base-content hover:text-primary transition-colors">Início</a>
+        <a href="sobre-nos.html" class="text-sm lg:text-base text-base-content hover:text-primary transition-colors">Sobre Nós</a>
+        <a href="servicos.html" class="text-sm lg:text-base text-base-content hover:text-primary transition-colors">Serviços</a>
+        <a href="clientes.html" class="text-sm lg:text-base text-primary font-semibold">Clientes</a>
+        <a href="contato.html" class="text-sm lg:text-base text-base-content hover:text-primary transition-colors">Contato</a>
+      </nav>
+
+      <!-- Menu Mobile -->
+      <div class="dropdown dropdown-end md:hidden">
+        <label tabindex="0" class="btn btn-ghost btn-circle">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre-nos.html">Sobre Nós</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="clientes.html" class="text-primary font-semibold">Clientes</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-12 md:py-16 lg:py-20 px-4 bg-gradient-to-br from-primary/10 to-base-100">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-4 md:mb-6">Nossos Clientes</h1>
+      <p class="text-base sm:text-lg md:text-xl text-base-content/80 mb-6 md:mb-8 max-w-2xl mx-auto">
+        Empresas que confiam na Contabilize para gerenciar suas finanças e impulsionar seu crescimento
+      </p>
+      <div class="breadcrumbs text-sm">
+        <ul class="justify-center">
+          <li><a href="index.html" class="text-primary">Início</a></li>
+          <li>Clientes</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Estatísticas de Clientes -->
+  <section class="py-12 md:py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12">Números que Falam por Si</h2>
+      
+      <div class="stats stats-vertical sm:stats-horizontal shadow w-full mb-12">
+        <div class="stat place-items-center text-center">
+          <div class="stat-title text-xs sm:text-sm">Total de Clientes</div>
+          <div class="stat-value text-primary text-2xl sm:text-3xl lg:text-4xl">850+</div>
+          <div class="stat-desc text-xs sm:text-sm">Empresas ativas</div>
+        </div>
+
+        <div class="stat place-items-center text-center">
+          <div class="stat-title text-xs sm:text-sm">Segmentos Atendidos</div>
+          <div class="stat-value text-secondary text-2xl sm:text-3xl lg:text-4xl">15+</div>
+          <div class="stat-desc text-xs sm:text-sm">Setores da economia</div>
+        </div>
+
+        <div class="stat place-items-center text-center">
+          <div class="stat-title text-xs sm:text-sm">Taxa de Retenção</div>
+          <div class="stat-value text-accent text-2xl sm:text-3xl lg:text-4xl">95%</div>
+          <div class="stat-desc text-xs sm:text-sm">Clientes satisfeitos</div>
+        </div>
+
+        <div class="stat place-items-center text-center">
+          <div class="stat-title text-xs sm:text-sm">Tempo Médio</div>
+          <div class="stat-value text-success text-2xl sm:text-3xl lg:text-4xl">8 anos</div>
+          <div class="stat-desc text-xs sm:text-sm">De parceria</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Segmentos Atendidos -->
+  <section class="py-12 md:py-16 px-4 bg-base-200">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12">Segmentos que Atendemos</h2>
+      
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+        <!-- Tecnologia -->
+        <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 text-center p-4">
+          <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-sm mb-1">Tecnologia</h3>
+          <p class="text-xs text-base-content/70">Startups e empresas de TI</p>
+        </div>
+
+        <!-- Varejo -->
+        <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 text-center p-4">
+          <div class="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-sm mb-1">Varejo</h3>
+          <p class="text-xs text-base-content/70">Lojas e e-commerce</p>
+        </div>
+
+        <!-- Serviços -->
+        <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 text-center p-4">
+          <div class="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0H8m8 0v2M8 6V4m8 2v2m-8-2v2m0 0H4m4 0V6m0 0V4"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-sm mb-1">Serviços</h3>
+          <p class="text-xs text-base-content/70">Consultorias e prestadores</p>
+        </div>
+
+        <!-- Indústria -->
+        <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 text-center p-4">
+          <div class="w-12 h-12 bg-info/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+            <svg class="w-6 h-6 text-info" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-sm mb-1">Indústria</h3>
+          <p class="text-xs text-base-content/70">Manufatura e produção</p>
+        </div>
+
+        <!-- Saúde -->
+        <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 text-center p-4">
+          <div class="w-12 h-12 bg-success/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+            <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-sm mb-1">Saúde</h3>
+          <p class="text-xs text-base-content/70">Clínicas e hospitais</p>
+        </div>
+
+        <!-- Educação -->
+        <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 text-center p-4">
+          <div class="w-12 h-12 bg-warning/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+            <svg class="w-6 h-6 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-sm mb-1">Educação</h3>
+          <p class="text-xs text-base-content/70">Escolas e universidades</p>
+        </div>
+
+        <!-- Alimentação -->
+        <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 text-center p-4">
+          <div class="w-12 h-12 bg-error/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+            <svg class="w-6 h-6 text-error" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.293 2.293c-.63.63-.184 1.707.707 1.707H19M7 13v4a2 2 0 002 2h4m0 0a2 2 0 002-2V9a2 2 0 00-2-2H9a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-sm mb-1">Alimentação</h3>
+          <p class="text-xs text-base-content/70">Restaurantes e delivery</p>
+        </div>
+
+        <!-- Construção -->
+        <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 text-center p-4">
+          <div class="w-12 h-12 bg-neutral/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+            <svg class="w-6 h-6 text-neutral" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-sm mb-1">Construção</h3>
+          <p class="text-xs text-base-content/70">Construtoras e imobiliárias</p>
+        </div>
+
+        <!-- Agronegócio -->
+        <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 text-center p-4">
+          <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-sm mb-1">Agronegócio</h3>
+          <p class="text-xs text-base-content/70">Produtores rurais</p>
+        </div>
+
+        <!-- Profissionais Liberais -->
+        <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 text-center p-4">
+          <div class="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-sm mb-1">Profissionais</h3>
+          <p class="text-xs text-base-content/70">Advogados, médicos, etc.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="py-12 md:py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12">O que Nossos Clientes Dizem</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <!-- Depoimento 1 -->
+        <div class="card bg-base-100 shadow-lg">
+          <div class="card-body">
+            <div class="flex items-center mb-4">
+              <div class="avatar placeholder mr-3">
+                <div class="bg-primary text-primary-content rounded-full w-12">
+                  <span class="text-sm font-bold">TI</span>
+                </div>
+              </div>
+              <div>
+                <h3 class="font-semibold">TechInova Solutions</h3>
+                <p class="text-sm text-base-content/70">Startup de Tecnologia</p>
+              </div>
+            </div>
+            <p class="text-sm text-base-content/80 mb-4">
+              "A Contabilize transformou nossa gestão financeira. Conseguimos reduzir custos em 30% e ter mais clareza sobre nossos números. Recomendo!"
+            </p>
+            <div class="rating rating-sm">
+              <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary" checked />
+              <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary" checked />
+              <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary" checked />
+              <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary" checked />
+              <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary" checked />
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 2 -->
+        <div class="card bg-base-100 shadow-lg">
+          <div class="card-body">
+            <div class="flex items-center mb-4">
+              <div class="avatar placeholder mr-3">
+                <div class="bg-secondary text-secondary-content rounded-full w-12">
+                  <span class="text-sm font-bold">FS</span>
+                </div>
+              </div>
+              <div>
+                <h3 class="font-semibold">Fashion Store</h3>
+                <p class="text-sm text-base-content/70">Varejo de Moda</p>
+              </div>
+            </div>
+            <p class="text-sm text-base-content/80 mb-4">
+              "Parceria de 8 anos! O atendimento é excepcional e sempre nos orientam sobre as melhores práticas fiscais. Equipe nota 10!"
+            </p>
+            <div class="rating rating-sm">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" checked />
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 3 -->
+        <div class="card bg-base-100 shadow-lg">
+          <div class="card-body">
+            <div class="flex items-center mb-4">
+              <div class="avatar placeholder mr-3">
+                <div class="bg-accent text-accent-content rounded-full w-12">
+                  <span class="text-sm font-bold">CM</span>
+                </div>
+              </div>
+              <div>
+                <h3 class="font-semibold">Clínica MedCare</h3>
+                <p class="text-sm text-base-content/70">Área da Saúde</p>
+              </div>
+            </div>
+            <p class="text-sm text-base-content/80 mb-4">
+              "Migrei para a Contabilize e foi a melhor decisão. Processos ágeis, tecnologia de ponta e economia real nos tributos."
+            </p>
+            <div class="rating rating-sm">
+              <input type="radio" name="rating-3" class="mask mask-star-2 bg-primary" checked />
+              <input type="radio" name="rating-3" class="mask mask-star-2 bg-primary" checked />
+              <input type="radio" name="rating-3" class="mask mask-star-2 bg-primary" checked />
+              <input type="radio" name="rating-3" class="mask mask-star-2 bg-primary" checked />
+              <input type="radio" name="rating-3" class="mask mask-star-2 bg-primary" checked />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Processo de Onboarding -->
+  <section class="py-12 md:py-16 px-4 bg-base-200">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12">Como se Tornar Nosso Cliente</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white font-bold text-xl">1</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Contato Inicial</h3>
+          <p class="text-sm text-base-content/70">Entre em contato conosco através do nosso site ou telefone</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white font-bold text-xl">2</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Análise Gratuita</h3>
+          <p class="text-sm text-base-content/70">Realizamos um diagnóstico completo da sua empresa</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white font-bold text-xl">3</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Proposta Personalizada</h3>
+          <p class="text-sm text-base-content/70">Criamos um plano sob medida para suas necessidades</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-success rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white font-bold text-xl">4</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Início da Parceria</h3>
+          <p class="text-sm text-base-content/70">Implementamos os serviços e acompanhamos os resultados</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-12 md:py-16 px-4 bg-primary text-primary-content">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Quer ser Nosso Próximo Cliente?</h2>
+      <p class="text-base md:text-lg mb-6 opacity-90">
+        Junte-se a mais de 850 empresas que já transformaram sua gestão financeira conosco
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button class="btn btn-neutral btn-lg">Solicitar Proposta</button>
+        <button class="btn btn-outline btn-lg border-white text-white hover:bg-white hover:text-primary">Agendar Consulta</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer footer-center p-10 bg-base-200 text-base-content">
+    <aside>
+      <img src="./assets/images/logo_vertical.png" class="w-24 h-auto mb-4" alt="Contabilize Logo">
+      <p class="font-bold">Contabilize - Soluções Contábeis</p>
+      <p>Transformando números em oportunidades desde 2010</p>
+    </aside>
+    <nav>
+      <div class="grid grid-flow-col gap-4">
+        <a href="index.html" class="link link-hover">Início</a>
+        <a href="sobre-nos.html" class="link link-hover">Sobre</a>
+        <a href="servicos.html" class="link link-hover">Serviços</a>
+        <a href="clientes.html" class="link link-hover">Clientes</a>
+        <a href="contato.html" class="link link-hover">Contato</a>
+      </div>
+    </nav>
+  </footer>
+</body>
+
+</html>

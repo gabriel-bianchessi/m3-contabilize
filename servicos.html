@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="emerald">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+  <title>Serviços - Contabilize</title>
+  <style>
+    /* Utility classes for better responsiveness */
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .line-clamp-3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    
+    /* Mobile menu fix */
+    .dropdown:focus-within .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="relative z-10 flex items-center justify-center p-4 lg:p-6 bg-base-100 shadow-sm">
+    <div class="flex flex-1 items-center justify-between max-w-7xl">
+      <a href="index.html">
+        <img src="./assets/images/logo_horizontal.png" class="object-contain h-12 md:h-16" />
+      </a>
+
+      <!-- Menu Desktop -->
+      <nav class="hidden md:flex space-x-4 lg:space-x-6">
+        <a href="index.html" class="text-sm lg:text-base text-base-content hover:text-primary transition-colors">Início</a>
+        <a href="sobre-nos.html" class="text-sm lg:text-base text-base-content hover:text-primary transition-colors">Sobre Nós</a>
+        <a href="servicos.html" class="text-sm lg:text-base text-primary font-semibold">Serviços</a>
+        <a href="clientes.html" class="text-sm lg:text-base text-base-content hover:text-primary transition-colors">Clientes</a>
+        <a href="contato.html" class="text-sm lg:text-base text-base-content hover:text-primary transition-colors">Contato</a>
+      </nav>
+
+      <!-- Menu Mobile -->
+      <div class="dropdown dropdown-end md:hidden">
+        <label tabindex="0" class="btn btn-ghost btn-circle">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre-nos.html">Sobre Nós</a></li>
+          <li><a href="servicos.html" class="text-primary font-semibold">Serviços</a></li>
+          <li><a href="clientes.html">Clientes</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-12 md:py-16 lg:py-20 px-4 bg-gradient-to-br from-primary/10 to-base-100">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-4 md:mb-6">Nossos Serviços</h1>
+      <p class="text-base sm:text-lg md:text-xl text-base-content/80 mb-6 md:mb-8 max-w-2xl mx-auto">
+        Oferecemos soluções completas em contabilidade e gestão empresarial para empresas de todos os portes
+      </p>
+      <div class="breadcrumbs text-sm">
+        <ul class="justify-center">
+          <li><a href="index.html" class="text-primary">Início</a></li>
+          <li>Serviços</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços Principais -->
+  <section class="py-12 md:py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12">Serviços Principais</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <!-- Contabilidade Completa -->
+        <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 border border-primary/20">
+          <div class="card-body">
+            <div class="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+              </svg>
+            </div>
+            <h3 class="card-title text-lg md:text-xl">Contabilidade Completa</h3>
+            <p class="text-sm md:text-base text-base-content/70 mb-4">
+              Escrituração contábil, balancetes mensais, demonstrações financeiras e cumprimento de todas as obrigações contábeis.
+            </p>
+            <ul class="text-sm space-y-1 mb-4">
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-primary rounded-full"></span>
+                Escrituração contábil digital
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-primary rounded-full"></span>
+                Balancetes e relatórios mensais
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-primary rounded-full"></span>
+                Demonstrações financeiras
+              </li>
+            </ul>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary btn-sm">Saiba Mais</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Departamento Fiscal -->
+        <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 border border-secondary/20">
+          <div class="card-body">
+            <div class="w-16 h-16 bg-secondary/20 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+              </svg>
+            </div>
+            <h3 class="card-title text-lg md:text-xl">Departamento Fiscal</h3>
+            <p class="text-sm md:text-base text-base-content/70 mb-4">
+              Gestão completa de tributos, apuração de impostos e cumprimento de obrigações fiscais e acessórias.
+            </p>
+            <ul class="text-sm space-y-1 mb-4">
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-secondary rounded-full"></span>
+                Apuração de impostos
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-secondary rounded-full"></span>
+                Obrigações acessórias
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-secondary rounded-full"></span>
+                Planejamento tributário
+              </li>
+            </ul>
+            <div class="card-actions justify-end">
+              <button class="btn btn-secondary btn-sm">Saiba Mais</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Departamento Pessoal -->
+        <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 border border-accent/20">
+          <div class="card-body">
+            <div class="w-16 h-16 bg-accent/20 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+            </div>
+            <h3 class="card-title text-lg md:text-xl">Departamento Pessoal</h3>
+            <p class="text-sm md:text-base text-base-content/70 mb-4">
+              Gestão completa de folha de pagamento, benefícios, férias e todas as rotinas trabalhistas.
+            </p>
+            <ul class="text-sm space-y-1 mb-4">
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-accent rounded-full"></span>
+                Folha de pagamento
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-accent rounded-full"></span>
+                eSocial e obrigações
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-accent rounded-full"></span>
+                Gestão de benefícios
+              </li>
+            </ul>
+            <div class="card-actions justify-end">
+              <button class="btn btn-accent btn-sm">Saiba Mais</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Consultoria Empresarial -->
+        <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 border border-info/20">
+          <div class="card-body">
+            <div class="w-16 h-16 bg-info/20 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-info" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="card-title text-lg md:text-xl">Consultoria Empresarial</h3>
+            <p class="text-sm md:text-base text-base-content/70 mb-4">
+              Orientação estratégica, análise financeira e suporte para tomada de decisões empresariais.
+            </p>
+            <ul class="text-sm space-y-1 mb-4">
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-info rounded-full"></span>
+                Análise financeira
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-info rounded-full"></span>
+                Consultoria estratégica
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-info rounded-full"></span>
+                Controles gerenciais
+              </li>
+            </ul>
+            <div class="card-actions justify-end">
+              <button class="btn btn-info btn-sm">Saiba Mais</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Abertura de Empresas -->
+        <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 border border-success/20">
+          <div class="card-body">
+            <div class="w-16 h-16 bg-success/20 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <h3 class="card-title text-lg md:text-xl">Abertura de Empresas</h3>
+            <p class="text-sm md:text-base text-base-content/70 mb-4">
+              Assessoria completa para abertura, alteração e encerramento de empresas com agilidade e segurança.
+            </p>
+            <ul class="text-sm space-y-1 mb-4">
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-success rounded-full"></span>
+                Constituição de empresas
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-success rounded-full"></span>
+                Alterações contratuais
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-success rounded-full"></span>
+                Encerramentos
+              </li>
+            </ul>
+            <div class="card-actions justify-end">
+              <button class="btn btn-success btn-sm">Saiba Mais</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificados Digitais -->
+        <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 border border-warning/20">
+          <div class="card-body">
+            <div class="w-16 h-16 bg-warning/20 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <h3 class="card-title text-lg md:text-xl">Certificados Digitais</h3>
+            <p class="text-sm md:text-base text-base-content/70 mb-4">
+              Emissão e renovação de certificados digitais A1 e A3 para assinatura digital e acesso aos sistemas governamentais.
+            </p>
+            <ul class="text-sm space-y-1 mb-4">
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-warning rounded-full"></span>
+                Certificados A1 e A3
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-warning rounded-full"></span>
+                Renovações
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-warning rounded-full"></span>
+                Suporte técnico
+              </li>
+            </ul>
+            <div class="card-actions justify-end">
+              <button class="btn btn-warning btn-sm">Saiba Mais</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Processos -->
+  <section class="py-12 md:py-16 px-4 bg-base-200">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12">Como Trabalhamos</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white font-bold text-xl">1</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Diagnóstico</h3>
+          <p class="text-sm text-base-content/70">Analisamos sua empresa e identificamos necessidades específicas</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white font-bold text-xl">2</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Planejamento</h3>
+          <p class="text-sm text-base-content/70">Desenvolvemos estratégias personalizadas para sua realidade</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white font-bold text-xl">3</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Execução</h3>
+          <p class="text-sm text-base-content/70">Implementamos soluções com excelência e agilidade</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-success rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white font-bold text-xl">4</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Acompanhamento</h3>
+          <p class="text-sm text-base-content/70">Monitoramos resultados e otimizamos continuamente</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-12 md:py-16 px-4 bg-primary text-primary-content">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Precisa de Ajuda com sua Contabilidade?</h2>
+      <p class="text-base md:text-lg mb-6 opacity-90">
+        Entre em contato conosco e descubra como podemos simplificar a gestão financeira da sua empresa
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button class="btn btn-neutral btn-lg">Solicitar Orçamento</button>
+        <button class="btn btn-outline btn-lg border-white text-white hover:bg-white hover:text-primary">Falar com Especialista</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer footer-center p-10 bg-base-200 text-base-content">
+    <aside>
+      <img src="./assets/images/logo_vertical.png" class="w-24 h-auto mb-4" alt="Contabilize Logo">
+      <p class="font-bold">Contabilize - Soluções Contábeis</p>
+      <p>Transformando números em oportunidades desde 2010</p>
+    </aside>
+    <nav>
+      <div class="grid grid-flow-col gap-4">
+        <a href="index.html" class="link link-hover">Início</a>
+        <a href="sobre-nos.html" class="link link-hover">Sobre</a>
+        <a href="servicos.html" class="link link-hover">Serviços</a>
+        <a href="clientes.html" class="link link-hover">Clientes</a>
+        <a href="contato.html" class="link link-hover">Contato</a>
+      </div>
+    </nav>
+  </footer>
+</body>
+
+</html>
